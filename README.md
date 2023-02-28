@@ -2,9 +2,9 @@
 
 ## Attention!!!
 
-We use the H2 database to test the tasks, so pay attention to the query syntax if the test fails, and if it works in
-your
-database. All queries must be written on one line and end with semicolon.
+We use the H2 database to test the tasks, so pay attention to the query syntax
+if the test fails, and if it works in your database. All queries must be written
+on one line and end with semicolon.
 
 ## Lesson 1 tasks:
 
@@ -58,13 +58,16 @@ database. All queries must be written on one line and end with semicolon.
 
         - mark int
 
-Write your script to a file with the path src/main/resources/SOLUTION.sql. It is forbidden to use the **"CREATE DATABASE
-University;**" query in the script, only queries to create tables should be added.
+Write your script to a file with the path src/main/resources/SOLUTION.sql. It is
+forbidden to use the **"CREATE DATABASE University;**" query in the script, only
+queries to create tables should be added.
 
 ## Lesson 2 tasks:
 
-1) Insert new Students with names “John”, “Chris”, “Carl” for grade “1”, then with names “Oliver”, “James”, “Lucas” and
-   “Henry” for grade “2” and with names “Jacob” and “Logan” for grade “3”. Insert more students for 4 and 5 grade.
+1) Insert new Students with names “John”, “Chris”, “Carl” for grade “1”, then
+   with names “Oliver”, “James”, “Lucas” and “Henry” for grade “2” and with
+   names “Jacob” and “Logan” for grade “3”. Insert more students for 4 and 5
+   grade.
 
 2) Insert new Subjects:
 
@@ -79,7 +82,8 @@ University;**" query in the script, only queries to create tables should be adde
 4) Insert 4 Payments:
 
 - Payment is referenced to student with name “John” and “Weekly” payment type;
-- Payment is referenced to student with name “Oliver” and “Monthly” payment type;
+- Payment is referenced to student with name “Oliver” and “Monthly” payment
+  type;
 - Payment is referenced to student with name “Henry” and “Weekly” payment type
 - Payment is referenced to student with name “James” and “Daily” payment type.
 - Insert more payments for students.
@@ -97,17 +101,12 @@ Write your script to a file with the path src/main/resources/SOLUTION.sql.
 
 ## Lesson 3 tasks:
 
-1) Change table ‘Student’.
-   ‘birthday’ field cannot be null
-2) Change table ‘Mark’
-   ‘mark’ should be in range from 1 to 10
-   ‘student_id’ and ‘subject_id’ cannot be null
-3) Change table ‘Subject’
-   ‘grade’ should be in range from 1 to 5
-4) Change table ‘PaymentType’
-   ‘name’ should be a unique value
-5) Change table ‘Payment’
-   ‘type_id’, ‘amount’ and ‘date’ cannot be null
+1) Change table ‘Student’. ‘birthday’ field cannot be null
+2) Change table ‘Mark’ ‘mark’ should be in range from 1 to 10 ‘student_id’ and
+   ‘subject_id’ cannot be null
+3) Change table ‘Subject’ ‘grade’ should be in range from 1 to 5
+4) Change table ‘PaymentType’ ‘name’ should be a unique value
+5) Change table ‘Payment’ ‘type_id’, ‘amount’ and ‘date’ cannot be null
 
 ## Lesson 4 tasks:
 
@@ -128,8 +127,9 @@ Write your script to a file with the path src/main/resources/SOLUTION.sql.
 6) Select all students whose name starts with ‘A’
 7) Select students with name = Roxi and group= 4 or name Tallie and group = 9
 
-Write your script to a file with the path src/main/resources/SOLUTION.sql. For tasks 2,3,5 use function dateadd() and
-add to this function current date like '20001010'(format: YearMonthDate).
+Write your script to a file with the path src/main/resources/SOLUTION.sql. For
+tasks 2,3,5 use function dateadd() and add to this function current date like '
+20001010'(format: YearMonthDate).
 
 ## Lesson 6 tasks:
 
@@ -146,7 +146,8 @@ Write your script to a file with the path src/main/resources/SOLUTION.sql.
 2) Select payments which is less than 300 and filter in ascending order;
 3) Select payment types filtered alphabetically;
 4) Select students filtered in reverse alphabetical order;
-5) Select students who have at least one payment more than 1000 and filter them by birthday date ASC.
+5) Select students who have at least one payment more than 1000 and filter them
+   by birthday date ASC.
 
 Write your script to a file with the path src/main/resources/SOLUTION.sql.
 
@@ -169,29 +170,34 @@ Write your script to a file with the path src/main/resources/SOLUTION.sql.
 
 ## Lesson 10 tasks:
 
-1) Select all columns from Subject where average mark for that subject is more than average mark for all subjects
-2) Select all students who paid for school less than average paid amount for all students
+1) Select all columns from Subject where average mark for that subject is more
+   than average mark for all subjects
+2) Select all students who paid for school less than average paid amount for all
+   students
 
 Write your script to a file with the path src/main/resources/SOLUTION.sql.
 
 ## Lesson 11 task:
 
-1) Update table Subject. Update grade 5 for subject name ‘End of Suburbia: Oil Depletion and the Collapse of the
-   American Dream’
+1) Update table Subject. Update grade 5 for subject name ‘End of Suburbia: Oil
+   Depletion and the Collapse of the American Dream’
 2) Update table Student. Update groupNumber 8 for student ‘Tremaine Worvill’
-3) Update table Payment. Update Amount to 500 and student_id to 2 in case payment_date > 2021-01-01 and type 2
+3) Update table Payment. Update Amount to 500 and student_id to 2 in case
+   payment_date > 2021-01-01 and type 2
 4) Update table Mark. Update Mark = 2 for subject_id 315
 
 Write your script to a file with the path src/main/resources/SOLUTION.sql.
 
 ## Lesson 12 task:
 
-1) Delete all students with grade more or equals than 4 and all relationships with this student;
+1) Delete all students with grade more or equals than 4 and all relationships
+   with this student;
 2) Delete students who have at least one mark less than 4;
 3) Delete “Daily” payment type and all relationships with this type.
 4) Delete All marks less than 7
 
-Write your script to a file with the path src/main/resources/SOLUTION.sql, and if you want to change tables constraints
-then you can to add queries for that to a file with the path src/main/resources/TABLES_CHANGES(**Attention**:
+Write your script to a file with the path src/main/resources/SOLUTION.sql, and
+if you want to change tables constraints then you can to add queries for that to
+a file with the path src/main/resources/TABLES_CHANGES(**Attention**:
 remove exists query when you add changes)
 
