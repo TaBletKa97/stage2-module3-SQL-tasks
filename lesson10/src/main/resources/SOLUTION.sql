@@ -1,0 +1,2 @@
+select s.* from SUBJECT as S join MARK M2 on S.ID = M2.SUBJECT_ID group by M2.SUBJECT_ID having avg(M2.MARK) > (select avg(MARK) from MARK);
+select S.* from STUDENT as S join PAYMENT P on S.ID = P.STUDENT_ID group by P.STUDENT_ID having avg(AMOUNT) < (select avg(AMOUNT) from PAYMENT);
