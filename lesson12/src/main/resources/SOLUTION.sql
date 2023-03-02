@@ -1,4 +1,4 @@
-delete from STUDENT  where STUDENT.ID IN (select distinct MARK.STUDENT_ID from MARK join SUBJECT on SUBJECT.ID = MARK.SUBJECT_ID where SUBJECT.GRADE >= 4);
-delete from STUDENT where STUDENT.ID in (select distinct MARK.STUDENT_ID from MARK join PAYMENT on MARK.STUDENT_ID = PAYMENT.STUDENT_ID where MARK.MARK < 4);
-delete from PAYMENTTYPE where PAYMENTTYPE.NAME in (select PAYMENTTYPE.NAME from PAYMENTTYPE join PAYMENT P on PAYMENTTYPE.ID = P.TYPE_ID where PAYMENTTYPE.NAME = 'DAILY');
-delete from MARK where MARK.MARK < 7;
+delete from STUDENT  WHERE GROUPNUMBER >= 4;
+delete from STUDENT where ID in (select distinct STUDENT_ID from MARK where MARK < 4);
+delete from PAYMENTTYPE where NAME = 'DAILY';
+delete from MARK where MARK < 7;
